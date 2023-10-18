@@ -7,10 +7,14 @@
   <title>Yuo-Tvideo - Удобный видео хостинг для тебя</title>
   <link rel="stylesheet" href="css/normalaiz.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/video-list.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container header__container">
       <a href="/" class="header__link">
         <svg class="header__logo" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса Yuo-Tvideo">
@@ -42,24 +46,29 @@
     </section>
 
     <section class="video">
-      <div class="container video__container">
+      <div class="container">
         <div class="video__player">
-          <iframe class="video__frame" src="https://youtu.be/pWP8pZRwRVo" frameborder="0" allowfullscreen
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-          </iframe>
+          <iframe class="video__iframe" width="728" height="410" src="https://www.youtube.com/embed/DbsAQSIKQXk"
+            title="Hack your brain with Obsidian.md" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
-        <div class="video__content">
-          <h2 class="video__title">Философия Идущего к реке</h2>
-          <a href="/" class="video__favorite video__favorite-active">
-            <span>В избранном</span>
-            <use xlink:href="/img/sprite.svg#star-ow"></use>
+        <div class="video__container">
+          <div class="video__content">
+            <h2 class="video__title">Философия Идущего к реке</h2>
+
+            <p class="video__channel">Правое полушарие интроверта</p>
+            <p class="video__info">
+              <span class="video__views">1 575 581 просмотр</span>
+              <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
+            </p>
+            <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+          </div>
+          <a href="/" class="video__link video__link-active">
+            <span class="video__no-favorite">Избранное</span>
+            <span class="video__favorite">В избранном</span>
+            <use class="video__icon" xlink:href="/img/sprite.svg#star-ob"></use>
           </a>
-          <p class="video__channel">Правое полушарие интроверта</p>
-          <p class="video__info">
-            <span class="video__views">1 575 581 просмотр</span>
-            <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
-          </p>
-          <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
         </div>
       </div>
     </section>
@@ -77,8 +86,9 @@
                 <p class="video__card-channel">Правое полушарие интроверта</p>
                 <p class="video__card-duration">31 мин 25 сек</p>
               </a>
-              <button class="video__card-favorite" type="button" aria-label="Добавить в Избранное,">
-                <svg class="search__icon">
+              <button class="video__card-favorite video__card-favorite-active" type="button"
+                aria-label="Добавить в Избранное,">
+                <svg class="video__card-icon">
                   <use class="star-o" xlink:href="/img/sprite.svg#star-ob"></use>
                   <use class="star" xlink:href="/img/sprite.svg#star"></use>
                 </svg>
@@ -94,8 +104,9 @@
                 <p class="video__card-channel">Правое полушарие интроверта</p>
                 <p class="video__card-duration">31 мин 25 сек</p>
               </a>
-              <button class="video__card-favorite" type="button" aria-label="Добавить в Избранное,">
-                <svg class="search__icon">
+              <button class="video__card-favorite video__card-favorite-active" type="button"
+                aria-label="Добавить в Избранное,">
+                <svg class="video__card-icon">
                   <use class="star-o" xlink:href="/img/sprite.svg#star-ob"></use>
                   <use class="star" xlink:href="/img/sprite.svg#star"></use>
                 </svg>
@@ -130,5 +141,4 @@
     </div>
   </footer>
 </body>
-
 </html>

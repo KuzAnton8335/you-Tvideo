@@ -1,0 +1,38 @@
+
+.search__form {
+  width: 100%;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid #fb9953;
+  padding: 10px 124px 10px 24px;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.search__input::placeholder {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  opacity: 0.4;
+}
+.search__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background: #ff6a00;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+.search__icon {
+  width: 20px;
+  height: 20px;
+}
