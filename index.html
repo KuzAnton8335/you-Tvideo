@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/video-list.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
   <main>
+    <!-- hero -->
     <section class="hero">
       <div class="container">
         <div class="hero__container">
@@ -31,7 +33,8 @@
         </div>
       </div>
     </section>
-
+    <!-- /hero -->
+    <!-- search -->
     <section class="search">
       <div class="container">
         <form class="search__form">
@@ -45,7 +48,8 @@
         </form>
       </div>
     </section>
-
+    <!-- /search -->
+    <!-- video-list -->
     <section class="video-list">
       <div class="container">
         <h2 class="video__list-title">В тренде</h2>
@@ -59,7 +63,8 @@
                 <p class="video__card-channel">Правое полушарие интроверта</p>
                 <p class="video__card-duration">31 мин 25 сек</p>
               </a>
-              <button class="video__card-favorite video__card-favorite-active" type="button" aria-label="Добавить в Избранное,">
+              <button class="video__card-favorite video__card-favorite-active" type="button"
+                aria-label="Добавить в Избранное,">
                 <svg class="video__card-icon">
                   <use class="star-o" xlink:href="/img/sprite.svg#star-ob"></use>
                   <use class="star" xlink:href="/img/sprite.svg#star"></use>
@@ -76,7 +81,8 @@
                 <p class="video__card-channel">Правое полушарие интроверта</p>
                 <p class="video__card-duration">31 мин 25 сек</p>
               </a>
-              <button class="video__card-favorite video__card-favorite-active" type="button" aria-label="Добавить в Избранное,">
+              <button class="video__card-favorite video__card-favorite-active" type="button"
+                aria-label="Добавить в Избранное,">
                 <svg class="video__card-icon">
                   <use class="star-o" xlink:href="/img/sprite.svg#star-ob"></use>
                   <use class="star" xlink:href="/img/sprite.svg#star"></use>
@@ -97,18 +103,19 @@
           <use xlink:href="/img/sprite.svg#logo-white"></use>
         </svg>
       </a>
-
-      <ul class="footer__developers">
-        <li class="footer__developers-item">
-          Designer: <a class="footer__developers-link" href="https://t.me/Mrshmallowww" target="_blank"
-            rel="noopener">Anastasia Ilina</a>
-        </li>
-        <li class="footer__developers-item">
-          Developer: <a class="footer__developers-link" href="https://t.me/Anton070183" target="_blank"
-            rel="noopener">Kuznecov Anton</a>
-        </li>
-      </ul>
-      <p class="footer__copyright">© You-Tvideo, 2023 </p>
+      <div class="footer__names">
+        <ul class="footer__developers">
+          <li class="footer__developers-item">
+            Designer: <a class="footer__developers-link" href="https://t.me/Mrshmallowww" target="_blank"
+              rel="noopener">Anastasia Ilina</a>
+          </li>
+          <li class="footer__developers-item">
+            Developer: <a class="footer__developers-link" href="https://t.me/Anton070183" target="_blank"
+              rel="noopener">Kuznecov Anton</a>
+          </li>
+        </ul>
+        <p class="footer__copyright">© You-Tvideo, 2023 </p>
+      </div>
     </div>
   </footer>
 </body>
