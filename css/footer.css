@@ -1,6 +1,7 @@
 .footer {
   background: #ff6a00 url("../img/footer-bg.jpg") center/cover;
   color: #fff;
+  letter-spacing: 0.02em;
 }
 
 .footer__container {
@@ -20,22 +21,62 @@
   padding-bottom: 21px;
 }
 .footer__developers-item {
-  padding-bottom: 9px;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.02em;
 }
 
 .footer__developers-item:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .footer__developers-link {
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.02em;
 }
 .footer__copyright {
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+}
+
+@media (max-width: 1024px) {
+  .footer__logo {
+    padding: 45px 0;
+    width: 305px;
+  }
+
+  .footer__names {
+    padding: 38px 0;
+  }
+
+  .footer__developers {
+    padding-bottom: 16px;
+  }
+
+  .footer__developers-item {
+    font-size: 14px;
+  }
+
+  .footer__developers-link {
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__logo {
+    padding-top: 24px;
+    padding-bottom: 0;
+    width: 180px;
+  }
+
+  .footer__names {
+    padding-top: 24px;
+    padding-bottom: 29px;
+  }
 }

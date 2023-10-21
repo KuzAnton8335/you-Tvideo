@@ -94,7 +94,27 @@ iframe {
 }
 
 .container {
-  max-width: 1320px;
-  padding: 0 30px;
+  --container-width: 1260px;
+  --container-offset: 30px;
+  max-width: calc(var(--container-width) + var(--container-offset) * 2);
+  padding: 0 var(--container-offset);
   margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    --container-width: 942px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    --container-width: 624px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    --container-offset: 11px;
+  }
 }

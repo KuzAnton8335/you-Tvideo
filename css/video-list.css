@@ -20,6 +20,7 @@
 .video-card__thubnail {
   border-radius: 16px;
   margin-bottom: 12px;
+  width: 100%;
 }
 .video__card-title {
   font-size: 24px;
@@ -52,4 +53,64 @@
 .video__card-icon {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .video-list {
+    padding: 60px 0;
+  }
+  .video__list-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .video__list-items {
+    row-gap: 32px;
+  }
+
+  .video__card-title {
+    font-size: 24px;
+  }
+  .video__card-channel {
+    font-size: 20px;
+  }
+  .video__card-duration {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__list-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .video-list {
+    padding: 40px 0 60px;
+  }
+
+  .video__list-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .video__list-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .video__card-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .video__card-channel {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .video__card-duration {
+    font-size: 14px;
+  }
 }

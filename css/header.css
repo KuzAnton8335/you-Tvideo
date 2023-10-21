@@ -22,3 +22,16 @@
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 768px) {
+  .header__link-text {
+    position: fixed;
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 540px) {
+  .header__logo {
+    max-width: 145px;
+  }
+}
