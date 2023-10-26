@@ -55,7 +55,7 @@
   display: none;
 }
 
-.video__card-favorite-active .star {
+.video__card-favorite.active .star {
   display: block;
 }
 .video__card-icon {
